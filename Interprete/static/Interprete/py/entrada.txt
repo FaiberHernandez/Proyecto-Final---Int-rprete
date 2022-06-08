@@ -1,0 +1,42 @@
+imprimir{"Tablas de" & " multiplicar"}
+
+numero a <- 0
+numero c
+c<-1
+imprimir{"----------------"}
+
+dum {a<4+c}:
+	a<-a+1
+	numero b
+	b<-0
+	dum{b<4+c}:
+		b<-b+1
+		imprimir{a & " * " & b & " = " & a * b}
+	dumnd
+	imprimir{"----------------"}
+dumnd
+
+a<-9
+numero b
+b<-12
+c<-13
+
+si{a>10}:
+	imprimir{"a es mayor que 10."}
+	si{b>11}:
+		imprimir{"a es mayor que 10 y b es mayor que 11."}
+		si{c>12}:
+			imprimir{"a es mayor que 10, b es mayor que 11 y c es mayor que 12."}
+		sind
+	sind
+aluid:
+	imprimir{"a es menor o igual que 10 y vale: " & a}
+sind
+
+boolean h <- 5<4
+imprimir {h}
+si{h}:
+	imprimir{"si es verdad"}
+aluid:
+	imprimir{"no es verdad"}
+sind
