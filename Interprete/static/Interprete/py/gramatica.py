@@ -12,7 +12,7 @@ reservadas = {
     'boolean' : 'BOOL',
     'real' : 'TRUE',
     'falsus' : 'FALSE',
-    'imprimir' : 'IMPRIMIR',
+    'exitus' : 'IMPRIMIR',
     'dum' : 'MIENTRAS',
     'dumnd' : 'FINMIENTRAS',
     'si' : 'IF',

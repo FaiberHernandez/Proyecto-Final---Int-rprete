@@ -32,7 +32,7 @@
                 <div class="row row-cols-1 row-cols-md-2 g-2 mb-2">
                     <div class="col mb-2">
                         <div class="form-floating">
-                            <textarea class="form-control txAreaIn" placeholder="Leave a comment here" id="codigoDigitado"
+                            <textarea class="form-control txAreaIn" placeholder="Código aquí" id="codigoDigitado"
                                 style="height: 300px"></textarea>
                             <label for="floatingTextarea" class="floatingLabelColor" id="tituloCodigo">
                                 <i class="fa-solid fa-code"></i> Escriba su código
@@ -46,13 +46,14 @@
                     <div class="col">
                         <div class="form-floating ms-4 overflow-auto "  style="height: 300px">
                             <h5 id="expls"> <i class="fa-solid fa-note-sticky"></i> Código de ejemplo:</h5>
-                            <pre>
-imprimir{"Tablas de" & " multiplicar"}
+                            <a class="exItem">Tablas de multiplicar</a>
+                            <pre hidden = "true" id="ejemploAll">
+exitus{"Tablas de" & " multiplicar"}
 
 numero a <- 0
 numero c
 c<-1
-imprimir{"----------------"}
+exitus{"----------------"}
 
 dum {a<4+c}:
 	a<-a+1
@@ -60,9 +61,9 @@ dum {a<4+c}:
 	b<-0
 	dum{b<4+c}:
 		b<-b+1
-		imprimir{a & " * " & b & " = " & a * b}
+		exitus{a & " * " & b & " = " & a * b}
 	dumnd
-	imprimir{"----------------"}
+	exitus{"----------------"}
 dumnd
 
 a<-9
@@ -71,23 +72,23 @@ b<-12
 c<-13
 
 si{a>10}:
-	imprimir{"a es mayor que 10."}
+    exitus{"a es mayor que 10."}
 	si{b>11}:
-		imprimir{"a es mayor que 10 y b es mayor que 11."}
+        exitus{"a es mayor que 10 y b es mayor que 11."}
 		si{c>12}:
-			imprimir{"a es mayor que 10, b es mayor que 11 y c es mayor que 12."}
+            exitus{"a es mayor que 10, b es mayor que 11 y c es mayor que 12."}
 		sind
 	sind
 aluid:
-	imprimir{"a es menor o igual que 10 y vale: " & a}
+    exitus{"a es menor o igual que 10 y vale: " & a}
 sind
 
 boolean h <- 5<4
-imprimir {h}
+exitus {h}
 si{h}:
-	imprimir{"si es verdad"}
+    exitus{"si es verdad"}
 aluid:
-	imprimir{"no es verdad"}
+    exitus{"no es verdad"}
 sind
                             </pre>
                         </div>

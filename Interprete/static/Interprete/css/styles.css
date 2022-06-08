@@ -81,3 +81,8 @@ h6,p,pre {
 .txAreaIn:focus {
     color: var(--paletaColor1);
 }
+
+.exItem{
+    cursor: pointer;
+    color: var(--paletaColor1);
+}

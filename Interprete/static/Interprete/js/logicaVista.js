@@ -62,6 +62,10 @@ $(function () {
             return false;
         }
     });
+
+    $(".exItem").click(function (e) { 
+        $("#codigoDigitado").text($("#ejemploAll").text())
+    });
 });
 
 function deselect() {
