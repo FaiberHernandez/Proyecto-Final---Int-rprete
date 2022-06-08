@@ -21,7 +21,8 @@ var es = {
     "txvalidarOk": "El código ha sido procesado, todo esta bien.",
     "txvalidarMal": "El código no es valido.",
     "txEjecutar": "El código ha sido ejecutado, revise la salida.",
-    "lblvoz": "Voz"
+    "lblvoz": "Voz",
+    "tablas": "Tablas de multiplicar"
 };
 
 var en = {
@@ -41,7 +42,8 @@ var en = {
     "txvalidarOk": "The code has been processed, everything is fine.",
     "txvalidarMal": "The code is not valid.",
     "txEjecutar": "The code has been executed, check the output.",
-    "lblvoz": "Voice"
+    "lblvoz": "Voice",
+    "tablas": "Multiplication tables"
 };
 
 var pt = {
@@ -61,7 +63,8 @@ var pt = {
     "txvalidarOk": "O código foi processado, está tudo bem.",
     "txvalidarMal": "O código não é válido.",
     "txEjecutar": "O código foi executado, verifique a saída.",
-    "lblvoz": "Voz"
+    "lblvoz": "Voz",
+    "tablas": "Tabuadas de multiplicação"
 };
 
 
@@ -98,8 +101,9 @@ function cambiarIdioma(lang) {
     $("#btnEjecutar").empty()
     $("#btnEjecutar").append('<i class="fa-solid fa-play"></i> '+lg.btnEjecutar)
     $("#salida").empty()
-    $("#salida").append('<i class="fa-solid fa-outdent"></i> '+lg.salida);
-    $("#lblVoz").text(lg.lblvoz);
+    $("#salida").append('<i class="fa-solid fa-outdent"></i> '+lg.salida)
+    $("#lblVoz").text(lg.lblvoz)
+    $("#tablas").text(lg.tablas)
     atencion = lg.atencion
     txAreaVacio = lg.txAreaVacio
     txvalidarOk = lg.txvalidarOk
