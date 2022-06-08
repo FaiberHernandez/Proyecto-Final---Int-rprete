@@ -63,7 +63,9 @@ $(function () {
         }
     });
 
-    $(".exItem").click(function (e) { 
+    $("#tablas").click(function (e) { 
+        console.log($("#ejemploAll").text())
+        $("#codigoDigitado").empty();
         $("#codigoDigitado").text($("#ejemploAll").text())
     });
 });
