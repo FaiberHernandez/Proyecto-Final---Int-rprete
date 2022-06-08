@@ -1,7 +1,7 @@
 var atencion = "Atención:"
 var txAreaVacio = "Por favor ingrese su código en el editor antes de validar o ejecutar."
 var txvalidarOk = "El código ha sido procesado, todo esta bien."
-var txvalidarMal = "El código no es valido."
+var txvalidarMal = "El código no es válido."
 var txEjecutar = "El código ha sido ejecutado, revise la salida."
 
 var es = {
@@ -19,7 +19,7 @@ var es = {
     "atencion": "Atención:",
     "txAreaVacio": "Por favor ingrese su código en el editor antes de validar o ejecutar.",
     "txvalidarOk": "El código ha sido procesado, todo esta bien.",
-    "txvalidarMal": "El código no es valido.",
+    "txvalidarMal": "El código no es válido.",
     "txEjecutar": "El código ha sido ejecutado, revise la salida.",
     "lblvoz": "Voz",
     "tablas": "Tablas de multiplicar"
