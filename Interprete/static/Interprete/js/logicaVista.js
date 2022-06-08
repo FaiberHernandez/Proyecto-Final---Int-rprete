@@ -63,10 +63,8 @@ $(function () {
         }
     });
 
-    $("#tablas").click(function (e) { 
-        console.log($("#ejemploAll").text())
-        $("#codigoDigitado").empty();
-        $("#codigoDigitado").text($("#ejemploAll").text())
+    $(".exItem").click(function (e) { 
+        $("#codigoDigitado").val($("#ejemploAll").text())
     });
 });
 

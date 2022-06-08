@@ -46,8 +46,8 @@
                     <div class="col">
                         <div class="form-floating ms-4 overflow-auto "  style="height: 300px">
                             <h5 id="expls"> <i class="fa-solid fa-note-sticky"></i> Código de ejemplo:</h5>
-                            
-                            <pre id="ejemploAll">
+                            <a class="exItem" id = "tablas">Tablas de multiplicar</a>
+                            <pre hidden = "true" id="ejemploAll">
 exitus{"Tablas de" & " multiplicar"}
 
 numero a <- 0
@@ -71,7 +71,8 @@ numero b
 b<-12
 c<-13
 
-si{a>10}:
+boolean h <- a>10
+si{h}:
     exitus{"a es mayor que 10."}
 	si{b>11}:
         exitus{"a es mayor que 10 y b es mayor que 11."}
@@ -81,14 +82,6 @@ si{a>10}:
 	sind
 aluid:
     exitus{"a es menor o igual que 10 y vale: " & a}
-sind
-
-boolean h <- 5<4
-exitus {h}
-si{h}:
-    exitus{"si es verdad"}
-aluid:
-    exitus{"no es verdad"}
 sind
                             </pre>
                         </div>
