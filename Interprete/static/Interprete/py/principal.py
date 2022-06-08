@@ -153,6 +153,8 @@ def validar(text):
     return (s)
     
 def ejecutar(text):
+    global s 
+    s = ""
     instrucciones = g.parse(text)
     ts_global = TS.TablaDeSimbolos()
     procesar_instrucciones(instrucciones, ts_global)

@@ -11,8 +11,11 @@ $(function () {
                     'codigo': codigo
                 },
                 success: function (respuesta) {
-                    $("#textico").text(respuesta.resultado.replaceAll("\n", "<br>"))
+                    validarOk()
                     console.log(respuesta)
+                },
+                error: function () {
+                    validarMal()
                 }
             });
         } else {
@@ -32,12 +35,31 @@ $(function () {
                     'codigo': codigo
                 },
                 success: function (respuesta) {
+                    ejecutarOk()
                     $("#textico").append(respuesta.resultado.replaceAll("\n", "<br>"))
                     console.log(respuesta)
+                },
+                error: function () {
+                    validarMal()
                 }
             });
         } else {
             campoVacio()
+        }
+    });
+
+    $('#codigoDigitado').keydown(function (e) {
+        if (e.keyCode === 9) {
+            var start = this.selectionStart;
+            end = this.selectionEnd;
+
+            var $this = $(this);
+
+            $this.val($this.val().substring(0, start)
+                + " "
+                + $this.val().substring(end));
+            this.selectionStart = this.selectionEnd = start + 1;
+            return false;
         }
     });
 });

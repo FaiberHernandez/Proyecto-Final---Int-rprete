@@ -31,7 +31,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,p,pre {
     color: var(--paletaColor1);
 }
 
@@ -73,11 +73,11 @@ h6 {
 }
 
 .txAreaIn {
-    color: var(--paletaColor4);
-    background: rgb(7, 26, 82);
-    background: linear-gradient(180deg, rgba(7, 26, 82, 1) 0%, rgba(8, 114, 46, 0.6881127450980392) 50%, rgba(23, 185, 120, 1) 100%);
+    color: var(--paletaColor1);
+    background: rgb(2,0,36);
+    background: linear-gradient(262deg, rgba(2,0,36,1) 6%, rgba(7,26,82,1) 56%, rgba(2,0,36,1) 94%);
 }
 
 .txAreaIn:focus {
-    color: var(--paletaColor4);
+    color: var(--paletaColor1);
 }
